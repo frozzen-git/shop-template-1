@@ -269,4 +269,8 @@
   }
 }
 
+body:not(.right-hand) #header-offcanvas .offcanvas-header .btn-close {
+  margin-left: calc(-0.5 * var(--bs-offcanvas-padding-x));
+  margin-right: auto;
+}
 /* -- HEADER -- */
