@@ -1,0 +1,21 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+@media (pointer: coarse) {
+  .mouse-device {
+    display: none !important;
+  }
+}
+@media (pointer: fine) {
+  .mobile-device {
+    display: none !important;
+  }
+}
+
+$xl-width: breakpoint-min(xl, $grid-breakpoints);
+$sm-width: breakpoint-min(sm, $grid-breakpoints);
+
+@import "./theme/header";
+@import "./theme/back-to-top-button";
+

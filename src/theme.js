@@ -1,3 +1,5 @@
+import './scss/theme.scss'
+
 import './js/color-modes'
 import './js/hand-modes'
 import './js/back-to-top'

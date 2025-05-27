@@ -49,6 +49,17 @@ eval("(() => {\n  \"use strict\";\n\n  window.addEventListener(\"DOMContentLoade
 
 /***/ }),
 
+/***/ "./src/scss/theme.scss":
+/*!*****************************!*\
+  !*** ./src/scss/theme.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://shop-template-1/./src/scss/theme.scss?");
+
+/***/ }),
+
 /***/ "./src/theme.js":
 /*!**********************!*\
   !*** ./src/theme.js ***!
@@ -56,7 +67,7 @@ eval("(() => {\n  \"use strict\";\n\n  window.addEventListener(\"DOMContentLoade
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_color_modes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/color-modes */ \"./src/js/color-modes.js\");\n/* harmony import */ var _js_color_modes__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_color_modes__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_hand_modes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/hand-modes */ \"./src/js/hand-modes.js\");\n/* harmony import */ var _js_hand_modes__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_hand_modes__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_back_to_top__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/back-to-top */ \"./src/js/back-to-top.js\");\n/* harmony import */ var _js_back_to_top__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_back_to_top__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/theme */ \"./src/js/theme.js\");\n/* harmony import */ var _js_theme__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_theme__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n\n//# sourceURL=webpack://shop-template-1/./src/theme.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_theme_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/theme.scss */ \"./src/scss/theme.scss\");\n/* harmony import */ var _js_color_modes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/color-modes */ \"./src/js/color-modes.js\");\n/* harmony import */ var _js_color_modes__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_color_modes__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_hand_modes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/hand-modes */ \"./src/js/hand-modes.js\");\n/* harmony import */ var _js_hand_modes__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_hand_modes__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_back_to_top__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/back-to-top */ \"./src/js/back-to-top.js\");\n/* harmony import */ var _js_back_to_top__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_back_to_top__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/theme */ \"./src/js/theme.js\");\n/* harmony import */ var _js_theme__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_theme__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://shop-template-1/./src/theme.js?");
 
 /***/ })
 
