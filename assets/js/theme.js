@@ -19,6 +19,16 @@ eval("(() => {\n  \"use strict\";\n\n  window.addEventListener(\"DOMContentLoade
 
 /***/ }),
 
+/***/ "./src/js/categories-menu.js":
+/*!***********************************!*\
+  !*** ./src/js/categories-menu.js ***!
+  \***********************************/
+/***/ (() => {
+
+eval("(() => {\n  \"use strict\";\n\n  window\n    .matchMedia(`(width < ${bsExtraLarge}px)`)\n    .addEventListener(\"change\", onMobileSizeEvent);\n\n  function onMobileSizeEvent(mql) {\n    const modal = document.getElementById(\"modalCategoryMenu\");\n    if (mql.matches) {\n      if (modal) {\n        modal.style.display = null;\n        modal.classList.remove(\"modal\", \"fade\", \"show\");\n        document.querySelectorAll('.modal-backdrop').forEach(element => element.remove())\n\n      }\n    } else {\n      document.querySelectorAll('.offcanvas-backdrop').forEach(element => element.remove())\n      if (modal && !modal.classList.contains(\"modal\")) {\n        modal.classList.add(\"modal\", \"fade\");\n      }\n    }\n  }\n  window.addEventListener(\"DOMContentLoaded\", () => {\n    onMobileSizeEvent({\n      media: `(width < ${bsExtraLarge}px)`,\n      matches: window.innerWidth < bsExtraLarge,\n    });\n  });\n})();\n\n\n//# sourceURL=webpack://shop-template-1/./src/js/categories-menu.js?");
+
+/***/ }),
+
 /***/ "./src/js/color-modes.js":
 /*!*******************************!*\
   !*** ./src/js/color-modes.js ***!
@@ -39,13 +49,13 @@ eval("(() => {\n  \"use strict\";\n\n  // const getStoredTheme = () => localStor
 
 /***/ }),
 
-/***/ "./src/js/theme.js":
-/*!*************************!*\
-  !*** ./src/js/theme.js ***!
-  \*************************/
+/***/ "./src/js/header-buttons.js":
+/*!**********************************!*\
+  !*** ./src/js/header-buttons.js ***!
+  \**********************************/
 /***/ (() => {
 
-eval("(() => {\n  \"use strict\";\n\n  window.addEventListener(\"DOMContentLoaded\", () => {\n    [...document.querySelectorAll(\"#header-buttons .dropdown-toggle\")].map(\n      (element) =>\n        new bootstrap.Dropdown(element, {\n          popperConfig(defaultBsPopperConfig) {\n            const newPopperConfig = Object.assign({}, defaultBsPopperConfig);\n            if (window.innerWidth < bsExtraLarge) {\n              if (window.innerHeight >= bsExtraSmall) {\n                newPopperConfig.placement = \"right\";\n              } else {\n                newPopperConfig.placement = \"top\";\n              }\n\n              let offset = newPopperConfig.modifiers.find(\n                (modifier) => modifier.name == \"offset\"\n              );\n              if (typeof offset !== \"undefined\") {\n                offset.options.offset = [0, 10];\n              }\n            }\n            return newPopperConfig;\n          },\n        })\n    );\n\n    //         document.querySelectorAll('#header-buttons .dropdown-btn').forEach((element) => {\n    //         })\n  });\n})();\n\n\n//# sourceURL=webpack://shop-template-1/./src/js/theme.js?");
+eval("(() => {\n  \"use strict\";\n\n  window.addEventListener(\"DOMContentLoaded\", () => {\n    [...document.querySelectorAll(\"#header-buttons .dropdown-toggle\")].map(\n      (element) =>\n        new bootstrap.Dropdown(element, {\n          popperConfig(defaultBsPopperConfig) {\n            const newPopperConfig = Object.assign({}, defaultBsPopperConfig);\n            if (window.innerWidth < bsExtraLarge) {\n              if (window.innerHeight >= bsExtraSmall) {\n                newPopperConfig.placement = \"right\";\n              } else {\n                newPopperConfig.placement = \"top\";\n              }\n\n              let offset = newPopperConfig.modifiers.find(\n                (modifier) => modifier.name == \"offset\"\n              );\n              if (typeof offset !== \"undefined\") {\n                offset.options.offset = [0, 10];\n              }\n            }\n            return newPopperConfig;\n          },\n        })\n    );\n\n    //         document.querySelectorAll('#header-buttons .dropdown-btn').forEach((element) => {\n    //         })\n  });\n})();\n\n\n//# sourceURL=webpack://shop-template-1/./src/js/header-buttons.js?");
 
 /***/ }),
 
@@ -67,7 +77,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_theme_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/theme.scss */ \"./src/scss/theme.scss\");\n/* harmony import */ var _js_color_modes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/color-modes */ \"./src/js/color-modes.js\");\n/* harmony import */ var _js_color_modes__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_color_modes__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_hand_modes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/hand-modes */ \"./src/js/hand-modes.js\");\n/* harmony import */ var _js_hand_modes__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_hand_modes__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_back_to_top__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/back-to-top */ \"./src/js/back-to-top.js\");\n/* harmony import */ var _js_back_to_top__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_back_to_top__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/theme */ \"./src/js/theme.js\");\n/* harmony import */ var _js_theme__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_theme__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://shop-template-1/./src/theme.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_theme_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/theme.scss */ \"./src/scss/theme.scss\");\n/* harmony import */ var _js_color_modes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/color-modes */ \"./src/js/color-modes.js\");\n/* harmony import */ var _js_color_modes__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_color_modes__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_hand_modes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/hand-modes */ \"./src/js/hand-modes.js\");\n/* harmony import */ var _js_hand_modes__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_hand_modes__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_back_to_top__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/back-to-top */ \"./src/js/back-to-top.js\");\n/* harmony import */ var _js_back_to_top__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_back_to_top__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_header_buttons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/header-buttons */ \"./src/js/header-buttons.js\");\n/* harmony import */ var _js_header_buttons__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_header_buttons__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _js_categories_menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/categories-menu */ \"./src/js/categories-menu.js\");\n/* harmony import */ var _js_categories_menu__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_categories_menu__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://shop-template-1/./src/theme.js?");
 
 /***/ })
 

@@ -1,0 +1,38 @@
+// body:not(.right-hand) #header-offcanvas .offcanvas-header .btn-close {
+body:not(.right-hand) #header-offcanvas .btn-close {
+  margin-left: calc(-0.5 * var(--bs-offcanvas-padding-x));
+  margin-right: auto;
+}
+
+#modalCategoryMenu .modal-header {
+  border-bottom: none;
+  display: none;
+}
+
+@media (width < $xl-width) {
+  #header-category-menu [data-bs-target="#modalCategoryMenu"] {
+    pointer-events: none;
+    background-color: transparent;
+    border: none;
+    color: var(--bs-body-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}
+
+@media (width >= $xl-width) {
+#modalCategoryMenu .modal-header {
+  display: flex;
+}
+}
+
+@each $breakpoint, $container-max-width in $container-max-widths {
+  @if $breakpoint == xl or $breakpoint == xxl {
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      #modalCategoryMenu .modal-dialog {
+        max-width: $container-max-width;
+        width: $container-max-width;
+      }
+    }
+  }
+}

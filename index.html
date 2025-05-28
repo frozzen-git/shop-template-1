@@ -93,11 +93,304 @@
                 class="offcanvas-xl offcanvas-bottom flex-xl-grow-1"
               >
                 <div class="offcanvas-body d-xl-flex">
-                  <div id="category">
-                    <button type="button" class="btn btn-secondary">
+                  <div id="header-category-menu">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalCategoryMenu"
+                    >
                       <i class="bi-handbag"></i>
                       <span>Categories</span>
                     </button>
+                    <div
+                      class="modal fade"
+                      id="modalCategoryMenu"
+                      tabindex="-1"
+                      aria-labelledby="modalCategoryMenuLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <span
+                              class="visually-hidden"
+                              id="modalCategoryMenuLabel"
+                              >Categories</span
+                            >
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <nav id="cat-menu-swiper" class="pb-5 mt-5 swiper">
+                              <div class="swiper-pagination"></div>
+                              <ul class="cat-1 list-unstyled swiper-wrapper">
+                                <li class="cat-card swiper-slide">
+                                  <a href="#"
+                                    ><img
+                                      src="assets/images/cat-1-250x250.jpg"
+                                    />
+                                    <div class="title">
+                                      Laptops &amp; Notebooks
+                                    </div>
+                                    <div class="description small lh-sm">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content
+                                    </div></a
+                                  >
+                                </li>
+                                <li
+                                  class="cat-card swiper-slide current-category"
+                                >
+                                  <a href="#"
+                                    ><img
+                                      src="assets/images/cat-1-250x250.jpg"
+                                    />
+                                    <div class="title">Components</div>
+                                    <div class="description small lh-sm">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content
+                                    </div></a
+                                  >
+                                </li>
+
+                                <li class="cat-card swiper-slide">
+                                  <a href="#"
+                                    ><img
+                                      src="assets/images/cat-1-250x250.jpg"
+                                    />
+                                    <div class="title">Desktops</div>
+                                    <div class="description small lh-sm">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content
+                                    </div>
+                                    <button
+                                      class="btn-show-sub"
+                                      type="button"
+                                      aria-expanded="false"
+                                    >
+                                      <i
+                                        class="bi bi-arrow-down-circle-fill"
+                                      ></i>
+                                    </button>
+                                  </a>
+                                  <ul class="cat-2 list-unstyled">
+                                    <li class="cat-card">
+                                      <a href="#"
+                                        ><img
+                                          src="assets/images/cat-1-250x250.jpg"
+                                        />
+                                        <div class="title">
+                                          Mice and Trackballs
+                                        </div>
+                                        <div class="description small lh-sm">
+                                          Some quick example text to build on
+                                          the card title and make up the bulk of
+                                          the card's content
+                                        </div></a
+                                      >
+                                    </li>
+                                    <li class="cat-card">
+                                      <a href="#"
+                                        ><img
+                                          src="assets/images/cat-1-250x250.jpg" />
+                                        <div class="title">Monitors</div>
+                                        <div class="description small lh-sm">
+                                          Some quick example text to build on
+                                          the card title and make up the bulk of
+                                          the card's content
+                                        </div>
+                                        <button
+                                          class="btn-show-sub"
+                                          type="button"
+                                          aria-expanded="false"
+                                        >
+                                          <i
+                                            class="bi bi-arrow-down-circle-fill"
+                                          ></i></button
+                                      ></a>
+                                      <ul class="cat-3 list-unstyled">
+                                        <li class="cat-card">
+                                          <a href="#"
+                                            ><img
+                                              src="assets/images/cat-1-250x250.jpg"
+                                            />
+                                            <div class="title">Printers</div>
+                                            <div
+                                              class="description small lh-sm"
+                                            >
+                                              Some quick example text to build
+                                              on the card title and make up the
+                                              bulk of the card's content
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <li class="cat-card current-category">
+                                          <a href="#"
+                                            ><img
+                                              src="assets/images/cat-1-250x250.jpg"
+                                            />
+                                            <div class="title">Scanners</div>
+                                            <div
+                                              class="description small lh-sm"
+                                            >
+                                              Some quick example text to build
+                                              on the card title and make up the
+                                              bulk of the card's content
+                                            </div></a
+                                          >
+                                        </li>
+                                        <li class="cat-card">
+                                          <a href="#"
+                                            ><img
+                                              src="assets/images/cat-1-250x250.jpg" />
+                                            <div class="title">Web Cameras</div>
+                                            <button
+                                              class="btn-show-sub"
+                                              type="button"
+                                              aria-expanded="false"
+                                            >
+                                              <i
+                                                class="bi bi-arrow-down-circle-fill"
+                                              ></i></button
+                                          ></a>
+                                          <ul class="cat-4 list-unstyled">
+                                            <!-- <li class="cat-card"><a href="#"><div class="title">Mice and Trackballs</div></a></li> -->
+                                            <li class="cat-card">
+                                              <a href="#"
+                                                ><img
+                                                  src="assets/images/cat-1-250x250.jpg"
+                                                />
+                                                <div class="title">
+                                                  Trackballs
+                                                </div>
+                                                <div
+                                                  class="description small lh-sm"
+                                                >
+                                                  Some quick example text to
+                                                  build on the card title and
+                                                  make up the bulk of the card's
+                                                  content
+                                                </div></a
+                                              >
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li class="cat-card">
+                                      <a href="#"
+                                        ><img
+                                          src="assets/images/cat-1-250x250.jpg"
+                                        />
+                                        <div class="title">Printers</div></a
+                                      >
+                                    </li>
+                                    <li class="cat-card">
+                                      <a href="#"
+                                        ><img
+                                          src="assets/images/cat-1-250x250.jpg"
+                                        />
+                                        <div class="title">Scanners</div>
+                                        <div class="description small lh-sm">
+                                          Some quick example text to build on
+                                          the card title and make up the bulk of
+                                          the card's content
+                                        </div></a
+                                      >
+                                    </li>
+                                    <li class="cat-card">
+                                      <a href="#"
+                                        ><img
+                                          src="assets/images/cat-1-250x250.jpg"
+                                        />
+                                        <div class="title">Web Cameras</div></a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="cat-card swiper-slide">
+                                  <a href="#"
+                                    ><img
+                                      src="assets/images/cat-1-250x250.jpg"
+                                    />
+                                    <div class="title">Tablets</div>
+                                    <div class="description small lh-sm">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content
+                                    </div></a
+                                  >
+                                </li>
+                                <li class="cat-card swiper-slide">
+                                  <a href="#"
+                                    ><img
+                                      src="assets/images/cat-1-250x250.jpg"
+                                    />
+                                    <div class="title">Software</div>
+                                    <div class="description small lh-sm">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content
+                                    </div></a
+                                  >
+                                </li>
+                                <li class="cat-card swiper-slide">
+                                  <a href="#"
+                                    ><img
+                                      src="assets/images/cat-1-250x250.jpg"
+                                    />
+                                    <div class="title">Phones &amp; PDAs</div>
+                                    <div class="description small lh-sm">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content
+                                    </div></a
+                                  >
+                                </li>
+                                <li class="cat-card swiper-slide">
+                                  <a href="#"
+                                    ><img
+                                      src="assets/images/cat-1-250x250.jpg"
+                                    />
+                                    <div class="title">Cameras</div>
+                                    <div class="description small lh-sm">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content
+                                    </div></a
+                                  >
+                                </li>
+                                <li class="cat-card swiper-slide">
+                                  <a href="#"
+                                    ><img
+                                      src="assets/images/cat-1-250x250.jpg"
+                                    />
+                                    <div class="title">MP3 Players</div>
+                                    <div class="description small lh-sm">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content
+                                    </div></a
+                                  >
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                          <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div> -->
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="flex-xl-grow-1">
