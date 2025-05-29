@@ -111,10 +111,15 @@
       align-items: center;
       gap: 1rem !important;
     }
+
     #header-buttons {
-      flex-direction: row;
+      flex-direction: row-reverse;
       transform: translateX(-65px);
     }
+    .right-hand #header-buttons {
+      flex-direction: row;
+    }
+
     .right-hand #header-buttons {
       order: 2;
       transform: translateX(65px);

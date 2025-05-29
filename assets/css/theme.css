@@ -30,7 +30,7 @@
   animation-duration: 5s;
   animation-timing-function: cubic-bezier(0, 0.66, 0.47, 1.16);
   animation-delay: 1s;
-  fill: var(--bs-body-color);
+  fill: var(--bs-primary);
 }
 
 .logo {
@@ -139,8 +139,11 @@
     gap: 1rem !important;
   }
   #header-buttons {
-    flex-direction: row;
+    flex-direction: row-reverse;
     transform: translateX(-65px);
+  }
+  .right-hand #header-buttons {
+    flex-direction: row;
   }
   .right-hand #header-buttons {
     order: 2;
@@ -285,6 +288,9 @@ body:not(.right-hand) #header-offcanvas .btn-close {
 /* -- HEADER -- */
 /* -- BackToTop Button -- */
 #btt-button {
+  --bs-btn-active-color: var(--bs-btn-color);
+  --bs-btn-active-bg: var(--bs-btn-bg);
+  --bs-btn-active-border-color: var(--bs-btn-border-color);
   border-radius: 12px;
   height: 42px;
   width: 42px;
@@ -295,9 +301,15 @@ body:not(.right-hand) #header-offcanvas .btn-close {
   transition: all 0.3s ease;
 }
 
-#btt-button:not(.show) {
+#btt-button:not(.active) {
   opacity: 0;
   transform: translateY(80px);
+}
+
+#btt-button.active:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
 }
 
 @media (width < 1200px) {

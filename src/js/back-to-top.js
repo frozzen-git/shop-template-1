@@ -17,11 +17,11 @@
 
         //we already talked about all this
         var top = window.pageYOffset;
-        var is_active = btt.classList.contains("show");
+        var is_active = btt.classList.contains("active");
         if (top > 200 && !is_active) {
-          btt.classList.add("show");
+          btt.classList.add("active");
         } else if (top < 200 && is_active) {
-          btt.classList.remove("show");
+          btt.classList.remove("active");
         }
       }
     }, 300);

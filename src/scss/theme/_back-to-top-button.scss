@@ -1,5 +1,9 @@
 /* -- BackToTop Button -- */
 #btt-button {
+  --bs-btn-active-color: var(--bs-btn-color);
+  --bs-btn-active-bg: var(--bs-btn-bg);
+  --bs-btn-active-border-color: var(--bs-btn-border-color);
+
   border-radius: 12px;
   height: 42px;
   width: 42px;
@@ -11,9 +15,14 @@
   bottom: calc(38px - 1rem);
   transition: all 0.3s ease;
 }
-#btt-button:not(.show) {
+#btt-button:not(.active) {
   opacity: 0;
   transform: translateY(80px);
+}
+#btt-button.active:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
 }
 @media (width < $xl-width) {
   .right-hand #btt-button {

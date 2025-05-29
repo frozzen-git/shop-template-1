@@ -17,7 +17,8 @@
   animation-duration: 5s;
   animation-timing-function: cubic-bezier(0, 0.66, 0.47, 1.16);
   animation-delay: 1s;
-  fill: var(--bs-body-color);
+  // fill: var(--bs-body-color);
+  fill: var(--bs-primary);
 }
 .logo {
   display: block;
