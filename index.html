@@ -652,6 +652,106 @@
 <div class="shadow p-3 mb-5 bg-body-tertiary rounded" style="height: 50px;">Regular shadow</div>
 <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="height: 50px;">Larger shadow</div>
        -->
+
+
+
+<!-- <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/macbook_1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/macbook_2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/macbook_3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+
+<style>
+@keyframes arrow-to-left {
+  from {
+    width: 42px;
+    left: 52px;
+        opacity: 0;
+
+  }
+  50% {
+    width: 42px;
+    left: 52px;
+        opacity: 1;
+
+  }
+  /* 25% {
+    width: 42px;
+    left: 52px;
+        opacity: 0.6;    
+  } */
+  /* 50% {
+    width: 84px;
+    left: 10px;
+    opacity: 0.9;
+  } */
+  75% {
+    width: 42px;
+    left: 10px;
+    opacity: 1;
+  }
+  to {
+    width: 42px;
+    left: 10px;
+        opacity: 0;
+
+  }
+}
+.carousel {
+  .carousel-control {
+    position: absolute;
+            opacity: 0;
+    height: 42px;
+    top: calc(50% - 21px);
+    bottom: calc(50% - 21px);
+    border-radius: 21px;
+    text-align: start;
+    animation-name: arrow-to-left;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+        /* width: 126px;
+            left: 10px; */
+
+
+ .bi {
+  position: relative;
+  display: block;
+}
+    .bi::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+      right: 2px;
+      height: 12.5px;
+border-top: dotted #fff 1px;
+    } 
+
+  }
+}
+</style>
+<div class="carousel" style="position:relative;height: 250px;background-color: gainsboro;">
+<button class="btn btn-primary carousel-control"><span class="bi bi-arrow-left"></button>
+</div>
       </div>
     </main>
     <footer></footer>
