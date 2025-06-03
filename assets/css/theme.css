@@ -381,7 +381,7 @@ body:not(.right-hand) #header-offcanvas .btn-close {
     left: 2px;
     right: 2px;
     height: 12.5px;
-    border-top: dotted #fff 1px;
+    border-top: dashed #fff 1px;
   }
 }
 

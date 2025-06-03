@@ -47,6 +47,10 @@
     border-radius: 21px;
     text-align: start;
 
+// width: 84px;
+// left: 10px;
+
+
 &.animate {
     animation-name: arrow-to-left;
     animation-duration: 1.5s;
@@ -68,7 +72,7 @@
       left: 2px;
       right: 2px;
       height: 12.5px;
-border-top: dotted #fff 1px;
+border-top: dashed #fff 1px;
     } 
 
   }
