@@ -5,3 +5,6 @@ import "./js/hand-modes";
 import "./js/back-to-top";
 import "./js/header-buttons";
 import "./js/categories-menu";
+
+
+import "./js/home-carousel"

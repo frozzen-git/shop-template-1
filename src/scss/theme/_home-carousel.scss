@@ -1,0 +1,77 @@
+/* -- HOME-MAIN-SLIDER -- */
+@keyframes arrow-to-left {
+  from {
+    width: 42px;
+    left: 52px;
+        opacity: 0;
+
+  }
+  25% {
+    width: 42px;
+    left: 52px;
+        opacity: 1;
+
+  }
+  50% {
+    width: 84px;
+    left: 10px;
+  }
+  75% {
+    width: 42px;
+    left: 10px;
+    opacity: 1;
+  }
+  to {
+    width: 42px;
+    left: 10px;
+        opacity: 0;
+
+  }
+}
+#home-slider {
+
+
+.carousel {
+    position:relative;
+    height: 250px;
+    background-color: gainsboro;
+}
+
+@media (width < $xl-width) and (prefers-reduced-motion: no-preference) {
+  .carousel-control {
+    position: absolute;
+            opacity: 0;
+    height: 42px;
+    top: calc(50% - 21px);
+    bottom: calc(50% - 21px);
+    border-radius: 21px;
+    text-align: start;
+
+&.animate {
+    animation-name: arrow-to-left;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    }
+
+
+ .bi {
+  position: relative;
+  display: block;
+}
+    .bi::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+      right: 2px;
+      height: 12.5px;
+border-top: dotted #fff 1px;
+    } 
+
+  }
+}
+}
+/* -- HOME-MAIN-SLIDER -- */
