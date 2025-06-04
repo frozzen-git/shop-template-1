@@ -10,6 +10,18 @@ body:not(.right-hand) #header-offcanvas .btn-close {
 }
 
 @media (width < $xl-width) {
+
+@media (pointer: coarse) {
+    #header-offcanvas::before {
+  content: "";
+  display: block;
+  background-color: var(--bs-offcanvas-border-color);;
+  min-height: 5px;
+  width: 30%;
+  margin: 5px auto 0;
+  border-radius: 2.5px;
+}
+}
   #header-category-menu [data-bs-target="#modalCategoryMenu"] {
     pointer-events: none;
     background-color: transparent;
@@ -17,6 +29,9 @@ body:not(.right-hand) #header-offcanvas .btn-close {
     color: var(--bs-body-color);
     font-size: 1.25rem;
     font-weight: 500;
+  }
+  #header-offcanvas {
+    height: auto;
   }
 }
 
@@ -37,7 +52,5 @@ body:not(.right-hand) #header-offcanvas .btn-close {
   }
 }
 
-// ДОБАВИТЬ СВАЙП ВНИЗ ОФФ-КАНВАСУ 
-// https://web3r.ru/swipe-event 
-// https://www.cssscript.com/detect-finger-swipe-events-javascript-pure-swipe/
-// https://www.cssscript.com/handling-swipe-events-basic/
+
+

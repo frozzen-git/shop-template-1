@@ -596,7 +596,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_bootstrap_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/bootstrap.scss */ \"./src/scss/bootstrap.scss\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n// Import our custom CSS\n\n\n// Import all of Bootstrap’s JS\n// import * as bootstrap from 'bootstrap'\n\n\n\nwindow.bootstrap = {\n  Dropdown: bootstrap__WEBPACK_IMPORTED_MODULE_1__.Dropdown,\n};\n\n\n//# sourceURL=webpack://shop-template-1/./src/bootstrap.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_bootstrap_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/bootstrap.scss */ \"./src/scss/bootstrap.scss\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n// Import our custom CSS\n\n\n// Import all of Bootstrap’s JS\n// import * as bootstrap from 'bootstrap'\n\n\n\nwindow.bootstrap = {\n  Dropdown: bootstrap__WEBPACK_IMPORTED_MODULE_1__.Dropdown, Offcanvas: bootstrap__WEBPACK_IMPORTED_MODULE_1__.Offcanvas\n};\n\n\n//# sourceURL=webpack://shop-template-1/./src/bootstrap.js?");
 
 /***/ }),
 

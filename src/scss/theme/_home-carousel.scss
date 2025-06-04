@@ -37,7 +37,7 @@
     background-color: gainsboro;
 }
 
-@media (width < $xl-width) and (prefers-reduced-motion: no-preference) {
+@media (width < $xl-width) and (pointer: coarse) and (prefers-reduced-motion: no-preference) {
   .carousel-control {
     position: absolute;
             opacity: 0;
@@ -46,6 +46,7 @@
     bottom: calc(50% - 21px);
     border-radius: 21px;
     text-align: start;
+    pointer-events: none;
 
 // width: 84px;
 // left: 10px;
@@ -63,15 +64,22 @@
  .bi {
   position: relative;
   display: block;
+  height: 24px !important;
 }
+
+    .bi::before {
+      font-weight: 600 !important;
+      line-height: 24px;
+    }
     .bi::after {
       content: "";
-      display: block;
+      display: inline-block;
       position: absolute;
-      bottom: 0;
+      bottom: 11px;
+      top: 11px;
       left: 2px;
       right: 2px;
-      height: 12.5px;
+      height: 1px;
 border-top: dashed #fff 1px;
     } 
 

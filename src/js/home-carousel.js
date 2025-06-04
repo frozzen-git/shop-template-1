@@ -2,18 +2,17 @@
   "use strict";
 
   const observer = new IntersectionObserver(entries => {
-  // Loop over the entries
   entries.forEach(entry => {
-    // If the element is visible
+    const button = entry.target.querySelector('.carousel-control')
+    if (button) {
     if (entry.isIntersecting) {
-      // Add the animation class
-    //   entry.target.classList.add('square-animation');
-      entry.target.querySelector('.carousel-control').classList.add('animate')
-    // console.log('isIntersecting', entry)
+      button.classList.add('animate')
     return
     }
-      entry.target.querySelector('.carousel-control.animate').classList.remove('animate')
-    // console.log(entry)
+    if (button.classList.contains('animate')) {
+      button.classList.remove('animate')
+    }
+    }
   });
 });
 
