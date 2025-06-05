@@ -1,13 +1,13 @@
 /* CATEGORIES MENU */
 
-    #header-center #cat-menu-swiper * {
+    #header-center #cat-menu-swiper.swiper-initialized * {
         gap: unset;
     }
     
 #cat-menu-swiper {
 
 
-    .swiper-pagination 
+    &.swiper-initialized .swiper-pagination 
     {
       margin: 1rem auto;
       position: relative;
@@ -31,6 +31,7 @@
     }
 
 
+    @media (width < $xl-width) {
     ul.cat-1 {
   display: flex;
   margin: 0;
@@ -150,7 +151,7 @@ ul:not(.cat-1) li.cat-card:has(ul.show) {
   margin-left: 0.5rem;
   margin-right: 0;
 }
-
+}
 }
 
 

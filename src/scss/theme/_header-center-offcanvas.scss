@@ -32,6 +32,7 @@ body:not(.right-hand) #header-offcanvas .btn-close {
   }
   #header-offcanvas {
     height: auto;
+    // transition: height 0.3s, var(--bs-offcanvas-transition);
   }
 }
 

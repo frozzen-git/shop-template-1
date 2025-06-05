@@ -13,6 +13,7 @@
         modal.classList.remove("modal", "fade", "show");
         document.querySelectorAll('.modal-backdrop').forEach(element => element.remove())
         swiperInit()
+
       }
     } else {
       document.querySelectorAll('.offcanvas-backdrop').forEach(element => element.remove())
@@ -26,7 +27,14 @@
   let swiper = null
 
   function swiperInit() {
-      swiper = new Swiper('#cat-menu-swiper', {
+    const menu_nav = document.getElementById('cat-menu-swiper')
+    menu_nav.classList.add('swiper')
+
+    const ul = menu_nav.querySelector('ul')
+    ul.classList.add('swiper-wrapper')
+    ul.querySelectorAll('li').forEach(el => el.classList.add('swiper-slide'))
+
+      swiper = new Swiper(menu_nav, {
         loop: false,
 spaceBetween: 16,
 mousewheel: true,
@@ -58,6 +66,15 @@ mousewheel: true,
   function swiperDestroy() {
     swiper.pagination.el.innerHTML = null
     swiper.destroy()
+    swiper = null
+
+    const menu_nav = document.getElementById('cat-menu-swiper')
+    menu_nav.classList.remove('swiper')
+
+    const ul = menu_nav.querySelector('ul')
+    ul.classList.remove('swiper-wrapper')
+    ul.querySelectorAll('li').forEach(el => el.classList.remove('swiper-slide'))
+
   }
 
   window.addEventListener("DOMContentLoaded", () => {
@@ -65,5 +82,43 @@ mousewheel: true,
       media: `(width < ${bsExtraLarge}px)`,
       matches: window.innerWidth < bsExtraLarge,
     });
+
+
+        document.querySelectorAll('#cat-menu-swiper .cat-card .btn-show-sub').forEach((element) => {
+            element.addEventListener('click', (e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                let li = element.closest('.cat-card')
+                let uls = li.getElementsByTagName('ul')
+                if (!uls.length) {
+                    return
+                }
+                if (uls[0].classList.contains('show')) {
+                    for (let ul of uls) {
+                        ul.classList.remove('show')
+                    }
+                }
+                else {
+                    let swiper = element.closest('nav').swiper
+                    if ((typeof swiper !== 'undefined') && (swiper !== null)) {
+                        let elSwiperIndex = li.getAttribute('data-swiper-slide-index')
+
+                        if (elSwiperIndex !== swiper.realIndex) {
+                                if ((swiper.realIndex + swiper.params.slidesPerView - 1) == elSwiperIndex + swiper.slides.length) {
+                                    // console.log('slideNext')
+                                    swiper.slideNext()
+                                }
+                            }
+        
+                    }
+
+                    uls[0].classList.add('show')
+                }
+
+
+            })
+        })
+
+
   });
 })();
